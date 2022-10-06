@@ -31,7 +31,7 @@ public class login {
 		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
 		driver.findElement(By.id("login-email")).sendKeys("samantatheking@gmail.com");
 		driver.findElement(By.id("login-password")).sendKeys("@Ss8371059433");
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='LOG IN']")));
 		driver.findElement(By.xpath("//input[@value='LOG IN']")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='button'])[49]")));
